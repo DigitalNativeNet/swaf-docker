@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -vx
 # sWAF - A simple Web Application Firewall
 # Copyright (C) 2020  styx0x6 <https://github.com/styx0x6>
 
@@ -26,5 +26,4 @@ fi
 
 # Let's go
 echo "+ Starting sWAF..."
-/usr/sbin/nginx
-/bin/sh
+/usr/sbin/nginx -g 'daemon off;'
